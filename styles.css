@@ -226,7 +226,6 @@ header {
 
 .tarjeta-central img {
   width: 100%;
-  transform: ;
 }
 
 .contenedor-tarjetas .tarjetas-izquierda {
@@ -287,14 +286,6 @@ header {
 @media (max-width: 900px) {
   .imagen img {
     display: none;
-  }
-
-  .servicios {
-    margin-top: 100px;
-  }
-
-  header {
-    height:120vh;
   }
 
   .contenido-header .textos {
