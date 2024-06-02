@@ -40,7 +40,6 @@ header {
   box-sizing: border-box;
   background-image: url(images/header_wave-bg.webp);
   width: 100%;
-  height: 100vh;
   background-size: cover;
 }
 
@@ -186,11 +185,21 @@ header {
 }
 
 /* Seccion de servicios */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #servicios {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 50px;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 #servicios .encabezado {
@@ -288,10 +297,6 @@ header {
     display: none;
   }
 
-  header {
-    height:120vh;
-  }
-  
   .contenido-header .textos {
     width: 100%;
   }
@@ -332,48 +337,48 @@ header {
   }
 }
 
-  /* Con esto se crea el menu emergente en pantallas menores a 768px */
-  .menu {
-    position: fixed;
-    width: 95%;
-    height: 50vh;
-    background-color: #f2f2f2;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 40px 0;
-    z-index: 100;
-    transition: 0.8;
-    margin: 10px;
-  }
+/* Con esto se crea el menu emergente en pantallas menores a 768px */
+.menu {
+  position: fixed;
+  width: 95%;
+  height: 75vh;
+  background-color: #f2f2f2;
+  right: -100%;
+  top: 0;
+  text-align: center;
+  padding: 40px 0;
+  z-index: 100;
+  transition: 0.8;
+  margin: 10px;
+}
 
-  .menu a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0;
-  }
+.menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
 
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
+.esconder-menu {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
 
-  /* Con esta propiedad se abre y cierra el menu en pantallas pequeñas */
-  #check:checked ~ .menu {
-    right: 0;
-  }
+/* Con esta propiedad se abre y cierra el menu en pantallas pequeñas */
+#check:checked ~ .menu {
+  right: 0;
+}
 
-  .menu a {
-    color: #3b3663;
-  }
+.menu a {
+  color: #3b3663;
+}
 
-  .esconder-menu {
-    color: #3b3663;
-  }
+.esconder-menu {
+  color: #3b3663;
+}
 
-  .contenido-header h1 {
-    font-size: 48px;
-  }
+.contenido-header h1 {
+  font-size: 48px;
+}
