@@ -329,4 +329,8 @@ header {
   header {
     height: 100vh;
   }
+
+  .servicios {
+    margin-top: 50px
+  }
 }
