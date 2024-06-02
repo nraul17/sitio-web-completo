@@ -326,6 +326,7 @@ header {
   .contenedor-tarjetas .tarjetas p {
     padding: 0;
   }
+}
 
   /* Con esto se crea el menu emergente en pantallas menores a 768px */
   .menu {
