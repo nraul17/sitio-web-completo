@@ -246,7 +246,9 @@ header {
     margin-top: 150px;
   }
 
-
+  header {
+    height:120vh;
+  }
 
   .contenido-header .textos {
     width: 100%;
