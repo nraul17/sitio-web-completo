@@ -1,6 +1,6 @@
 ## Proyecto de sitio web responsivo con HTML5 y CSS
 
-**[Link en vivo](https://nraul17.github.io/sitio_web_reponsivo_2/)**
+**[Link en vivo](https://nraul17.github.io/sitio-web-completo/)**
 
 **Descripción del proyecto**
 
