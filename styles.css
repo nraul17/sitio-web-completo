@@ -92,7 +92,7 @@ header {
   transform: rotate(315deg);
 }
 
-.search .cuadro-busqueda {
+#search {
   width: 250px;
   height: 24px;
 }
