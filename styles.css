@@ -213,6 +213,7 @@ header {
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
+  align-items: start;
   width: 25%;
 }
 
