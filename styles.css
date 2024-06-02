@@ -242,9 +242,6 @@ header {
     display: none;
   }
 
-  header {
-    height: 150vh
-
   .contenido-header .textos {
     width: 100%;
   }
