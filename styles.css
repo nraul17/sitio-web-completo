@@ -289,6 +289,14 @@ header {
     display: none;
   }
 
+  .servicios {
+    margin-top: 100px;
+  }
+
+  header {
+    height:120vh;
+  }
+
   .contenido-header .textos {
     width: 100%;
   }
@@ -373,4 +381,3 @@ header {
   .contenido-header h1 {
     font-size: 48px;
   }
-}
