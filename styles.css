@@ -1,3 +1,5 @@
+/* Declaracion de fuentes */
+
 @font-face {
   font-family: "Nunito"; /* Nombre de la familia de fuentes */
   src: url("fonts/Nunito-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
@@ -28,6 +30,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -182,58 +185,107 @@ header {
 }
 
 /* Seccion de servicios */
-.servicios {
+#servicios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#servicios .encabezado {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.encabezado h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3663;
+  font-family: 'nunito-ExtraBold', sans-serif;
+}
+
+#servicios .contenedor-tarjetas {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.contenedor-tarjetas .tarjeta-central {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding: 0 15px;
+}
+
+.tarjeta-central img {
+  width: 100%;
+  
+}
+
+.contenedor-tarjetas .tarjetas-izquierda {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-  box-sizing: border-box;
+  justify-content: start;
+  width: 30%;
 }
 
-.servicios h2 {
-  color: #3b3663;
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.contenedor-tarjetas {
+.contenedor-tarjetas .tarjetas-derecha {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  box-sizing: border-box;
+  justify-content: start;
+  width: 30%;
 }
 
 .contenedor-tarjetas .tarjetas {
-  margin: 20px;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 30px 10px;
+  padding: 10px;
   text-align: center;
-  align-items: start;
-  width: 25%;
 }
 
-.tarjetas img {
-  width: 100%;
+.contenedor-tarjetas .tarjetas img {
+  width: 35%;
 }
 
-.tarjetas img:hover {
-  transform: rotateY(180deg);
+.contenedor-tarjetas .tarjetas img:hover {
+  transform: scale(1.2);
 }
 
-.tarjetas h3 {
+.contenedor-tarjetas .tarjetas h3 {
   color: #3b3663;
-  padding: 10px 0;
+  margin: 15px 0;
 }
 
-.tarjetas p {
+.contenedor-tarjetas .tarjetas p {
   color: #696687;
-  font-family: "Rubik", sans-serif;
+  padding: 0 25px;
 }
+
+.contenedor-tarjetas .tarjetas a {
+  text-decoration: none;
+  color: #f47514;
+}
+
+.contenedor-tarjetas .tarjetas a:hover {
+  color: #ff00b7;
+}
+
+
+
+
+
+
 
 /* Ajustes responsivos */
 
@@ -250,17 +302,23 @@ header {
     display: none;
   }
 
-  .contenedor-tarjetas {
+  #servicios .contenedor-tarjetas {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .contenedor-tarjetas .tarjeta-central {
+    display: none;
   }
 
   .contenedor-tarjetas .tarjetas {
-    width: 70%;
+    width: 200%;
   }
 
-  .tarjetas img {
-    width: 75%;
-  }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -272,6 +330,10 @@ header {
   .mostrar-menu,
   .esconder-menu {
     display: block;
+  }
+
+  .contenedor-tarjetas .tarjetas p {
+    padding: 0;
   }
 
   /* Con esto se crea el menu emergente en pantallas menores a 768px */
@@ -319,8 +381,5 @@ header {
   .contenido-header h1 {
     font-size: 48px;
   }
-
-  header {
-    height: 100vh;
-  }
+  
 }
