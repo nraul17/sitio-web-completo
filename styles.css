@@ -1,5 +1,6 @@
 /* Declaracion de fuentes */
 
+/* Configuración de fuentes en el servidor */
 @font-face {
   font-family: "Nunito"; /* Nombre de la familia de fuentes */
   src: url("fonts/Nunito-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
@@ -205,7 +206,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #3b3663;
-  font-family: 'nunito-ExtraBold', sans-serif;
+  font-family: "nunito-ExtraBold", sans-serif;
 }
 
 #servicios .contenedor-tarjetas {
@@ -225,7 +226,7 @@ header {
 
 .tarjeta-central img {
   width: 100%;
-  
+  transform: ;
 }
 
 .contenedor-tarjetas .tarjetas-izquierda {
@@ -281,12 +282,6 @@ header {
   color: #ff00b7;
 }
 
-
-
-
-
-
-
 /* Ajustes responsivos */
 
 @media (max-width: 900px) {
@@ -316,9 +311,6 @@ header {
   .contenedor-tarjetas .tarjetas {
     width: 200%;
   }
-
-
-  
 }
 
 @media (max-width: 768px) {
@@ -381,5 +373,4 @@ header {
   .contenido-header h1 {
     font-size: 48px;
   }
-  
 }
