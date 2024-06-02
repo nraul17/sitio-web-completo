@@ -3,6 +3,7 @@
   src: url("fonts/Nunito-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
   font-weight: 400; /* Estilo de peso de fuente (opcional) */
   font-style: normal; /* Estilo de estilo de fuente (opcional) */
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("fonts/Nunito-ExtraBold.ttf") format("truetype"); /* Ruta y formato de archivo */
   font-weight: 800; /* Estilo de peso de fuente (opcional) */
   font-style: normal; /* Estilo de estilo de fuente (opcional) */
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
   src: url("fonts/Rubik-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
   font-weight: 400; /* Estilo de peso de fuente (opcional) */
   font-style: normal; /* Estilo de estilo de fuente (opcional) */
+  font-display: swap;
 }
 
 /* Reset */
