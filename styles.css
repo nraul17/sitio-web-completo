@@ -288,6 +288,10 @@ header {
     display: none;
   }
 
+  #servicios {
+    margin-top: 50px;
+  }
+  
   .contenido-header .textos {
     width: 100%;
   }
