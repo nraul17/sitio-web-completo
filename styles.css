@@ -297,6 +297,10 @@ main {
     display: none;
   }
 
+  #servicios .encabezado {
+    margin-top: 50px;
+  }
+
   .contenido-header .textos {
     width: 100%;
   }
