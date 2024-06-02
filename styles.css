@@ -242,6 +242,12 @@ header {
     display: none;
   }
 
+  .servicios {
+    margin-top: 150px;
+  }
+
+
+
   .contenido-header .textos {
     width: 100%;
   }
