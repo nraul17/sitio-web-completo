@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Nunito"; /* Nombre de la familia de fuentes */
+  src: url("fonts/Nunito-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
+  font-weight: 400; /* Estilo de peso de fuente (opcional) */
+  font-style: normal; /* Estilo de estilo de fuente (opcional) */
+}
+
+@font-face {
+  font-family: "Nunito-ExtraBold"; /* Nombre de la familia de fuentes */
+  src: url("fonts/Nunito-ExtraBold.ttf") format("truetype"); /* Ruta y formato de archivo */
+  font-weight: 800; /* Estilo de peso de fuente (opcional) */
+  font-style: normal; /* Estilo de estilo de fuente (opcional) */
+}
+
+@font-face {
+  font-family: "Rubick"; /* Nombre de la familia de fuentes */
+  src: url("fonts/Rubik-Regular.ttf") format("truetype"); /* Ruta y formato de archivo */
+  font-weight: 400; /* Estilo de peso de fuente (opcional) */
+  font-style: normal; /* Estilo de estilo de fuente (opcional) */
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -103,6 +124,7 @@ header {
 }
 
 .contenido-header h1 {
+  font-family: "Nunito-ExtraBold";
   color: #f2f2f2;
   font-size: 60px;
   font-weight: bolder;
@@ -168,7 +190,7 @@ header {
 }
 
 .servicios h2 {
-  color: #3B3663;
+  color: #3b3663;
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
@@ -200,17 +222,18 @@ header {
 }
 
 .tarjetas h3 {
-  color: #3B3663;
+  color: #3b3663;
   padding: 10px 0;
 }
 
 .tarjetas p {
   color: #696687;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Ajustes responsivos */
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   .imagen img {
     display: none;
   }
@@ -236,7 +259,7 @@ header {
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .botones {
     flex-direction: column;
     align-self: baseline;
@@ -262,7 +285,7 @@ header {
     margin: 10px;
   }
 
-  .menu a{
+  .menu a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,11 +305,11 @@ header {
   }
 
   .menu a {
-    color: #3B3663;
+    color: #3b3663;
   }
 
   .esconder-menu {
-    color: #3B3663;
+    color: #3b3663;
   }
 
   .contenido-header h1 {
@@ -296,6 +319,4 @@ header {
   header {
     height: 100vh;
   }
-
-
 }
