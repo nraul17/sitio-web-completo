@@ -209,6 +209,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  margin-top: 50px;
 }
 
 .encabezado h2 {
@@ -295,10 +296,6 @@ main {
 @media (max-width: 900px) {
   .imagen img {
     display: none;
-  }
-
-  #servicios .encabezado {
-    margin-top: 50px;
   }
 
   .contenido-header .textos {
